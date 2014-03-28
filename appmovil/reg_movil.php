@@ -28,54 +28,54 @@
                     // letras y números y no caracteres especiales.
                     if (!preg_match('/^[a-zA-Z0-9_\-]{4,20}$/', $_POST['c01']))
                     {
-                        $errores[] = 'The <strong>nickname</strong> should have minimum 4 characters and maximum 20. No speciall characters allowed.';
+                        $errores[] = 'Campo nickname obligatorio.';
                     }
 
                     // El nombre = que nickname y máximo 20 caracteres.
                     if (!preg_match('/^[a-zA-Z0-9_\- ]{4,20}$/', $_POST['c02']))
                     {
-                        $errores[] = 'The <strong>name</strong> should have maximum 20 chars. No special characters allowed.';
+                        $errores[] = 'Campo nombre obligatorio';
                     }
                     // Los apellidos = que nickname y máximo 100 caracteres.
                     if (!preg_match('/^[a-zA-Z0-9_\- ]{4,100}$/', $_POST['c03']))
                     {
-                        $errores[] = 'The <strong>surname</strong> should have maximum 100 chars. No special characters allowed.';
+                        $errores[] = 'Campo apellidos obligatorio';
                     }
                     
                     // La edad
                     if (!preg_match('/^[0-9]{1,3}$/', $_POST['c04']))
                     {
-                        $errores[] = 'The <strong>edad</strong> should have maximum 100 chars. No special characters allowed.';
+                        $errores[] = 'Campo edad obligatorio';
                     }
 
                     // Validar e-mail
                     if (!preg_match('/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,5})$/', $_POST['c05']))
                     {
-                        $errores[] = 'The <strong>e-mail address</strong> doesn\'t have a valid format.';
+                        $errores[] = 'Campo email obligatorio';
                     }
 
                     // El código postal
                     if (!preg_match('/^[0-9]{5}$/', $_POST['c06']))
                     {
-                        $errores[] = 'The <strong>codigo postal</strong> should have maximum 100 chars. No special characters allowed.';
+                        $errores[] = 'Campo código postal obligatorio';
                     }
                     
                     // Fecha nacimiento
                     if (!preg_match('/[0-9]{1,2}\/[0-9]{1,2}\/([0-9][0-9]){1,2}/', $_POST['c07']))
                     {
-                        $errores[] = 'The <strong>fecha nacimiento</strong> should have maximum 100 chars. No special characters allowed.';
+                        $errores[] = 'Campo fecha de nacimiento obligatorio';
                     }
                     
                     // Sexo
                     if (!preg_match('/^[H|M]{1}$/', $_POST['c08']))
                     {
-                        $errores[] = 'The <strong>Sexo (H o M)</strong> should have maximum 100 chars. No special characters allowed.';
+                        $errores[] = 'Campo sexo obligatorio';
                     }
                     
                     // Telefono
                     if (!preg_match('/^[0-9]{9,10}$/', $_POST['c09']))
                     {
-                        $errores[] = 'The <strong>Telefono</strong> should have maximum 100 chars. No special characters allowed.';
+                        $errores[] = 'Campo teléfono obligatorio';
                     }
                     
                     // Privilegios
@@ -89,7 +89,7 @@
                     // Have a look at: http://www.rexegg.com/ for more info!!.
                     if (!preg_match('/(?=^[\w\W]{6,15}$)(?=.*?[a-z])(?=.*?[A-Z])(?=.*?\d).*/', $_POST['c11']))
                     {
-                        $errores[] = '<strong>Password</strong> requirements not accomplished. Minimum 6 characters, 1 Capital Letter, 1 regular letter, 1 number';
+                        $errores[] = 'Campo contraseña obligatorio';
                     }
                     
                     if (count($errores) == 0)
