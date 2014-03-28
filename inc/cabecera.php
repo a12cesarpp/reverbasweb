@@ -54,20 +54,20 @@
             <nav class="main-menu">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
-                    <li><a href="index.html">REVERBAS</a></li>
-                    <li><a href="index.html">MUSICA</a></li>
-                    <li><a href="index.html">DOCUMENTALES</a></li>
+                    <li><a href="reverbas.html">REVERBAS</a></li>
+                    <li><a href="musica.html">MUSICA</a></li>
+                    <li><a href="documentales.html">DOCUMENTALES</a></li>
                     <li>
                         <a>INTERACTIVIDAD</a>
                         <ul>
-                            <li><a href="elements.html"></a></li>
-                            <li><a href="typography.html">STREET ART</a></li>
-                            <li><a href="blog_single.html">PLAYLIST | PODCAST</a></li>
-                            <li><a href="blog_single.html">BRICONSEJOS</a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="street_art.html">STREET ART</a></li>
+                            <li><a href="play_podcast.html">PLAYLIST | PODCAST</a></li>
+                            <li><a href="briconsejos.html">BRICONSEJOS</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">GALERIA</a></li>
-                    <li><a href="contact.html">CONTACTO</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
  

@@ -3,10 +3,22 @@
         <div class="features">
             <div class="title clearfix">
                 <img src="images/code-icon.png" alt="" class="alignleft" />
-                <h3>Musica</h3>
+                <h3>Street Art</h3>
 
             </div>
-           <div id="conte_fotos">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d46778.41975626738!2d-8.544769650000001!3d42.88020494999977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1396003303315" width="600" height="450" frameborder="0" style="border:0"></iframe>
+        </div>
+    </div>
+</div>   
+<div class="container">        
+    <div class="col_1_3">
+        <div class="features">
+            <div class="title clearfix">
+                <img src="images/code-icon.png" alt="" class="alignleft" />
+                <h3>Galeria Fotos Street Art</h3>
+
+            </div>
+             <div id="conte_fotos">
                             <div id="conte_fotos_foto1" class="foto"> 
                                  <a href="fotos/foto1.html" target="_self" title="Imagen 1" >
                                      <img src="./images/foto1.jpg" alt="Imagen 1"/>
@@ -61,6 +73,7 @@
                             &#62;&#62;
                         </a>
                     </div>
+        </div>
         </div>
     </div>
 </div>    
