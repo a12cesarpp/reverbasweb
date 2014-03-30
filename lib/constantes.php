@@ -10,8 +10,8 @@ define('RUTA_FOTOS', RAIZ . 'fotos/');
 
 // Bases de datos.
 define('BD_SERVIDOR', 'localhost');
-define('BD_NOMBRE', 'forcer_Rivera_wordpress');
-define('BD_USUARIO', 'forcer_reverbas');
-define('BD_PASSWORD', 'reverbas_2014');
+define('BD_NOMBRE', 'xxxxx');
+define('BD_USUARIO', 'xxxxxxx');
+define('BD_PASSWORD', 'xxxxxx');
 
 ?>
