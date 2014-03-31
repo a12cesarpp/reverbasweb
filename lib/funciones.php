@@ -2,6 +2,12 @@
 
 require 'phpass-0.3/PasswordHash.php'; 
    
+/**
+ * Método que encripta password con librería phpass
+ * @param type $password
+ * @param type $vueltas
+ * @return type
+ */
 function encriptar($password, $vueltas = 8) {
     $hasher = new PasswordHash($vueltas, false);
  
@@ -10,6 +16,12 @@ function encriptar($password, $vueltas = 8) {
     return $password;
 }
 
+/**
+ * Método para comprobar si la password guardada coincide con la ofrecida
+ * @param type $password
+ * @param type $passbbdd
+ * @return boolean
+ */
 function comprobarPass($password,$passbbdd) {
     if($hasher->CheckPassword($password, $passbbdd))
     {

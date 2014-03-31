@@ -6,14 +6,17 @@
     {
         $conexion = Basedatos::getInstancia();
         
+        // se comprueba que los campos estén cubiertos
         if(!empty($_POST['c01']) && !empty($_POST['c02']))
         {
             $sql = sprintf("select nickname from usuarios where nickname='%s'", $_POST['c01']);
             
-            if(!$conexion->existe($sql))
+            // se consulta si existe el nickname en la bbdd
+            if($conexion->existe($sql))
             {
                 $sql = sprintf("select password from usuarios where nickname='%s'", $_POST['c01']);
                 
+                // se consulta la password de la bbdd
                 $passbbdd = $conexion->consulta($sql);
                 
                 if(comprobarPass($_POST['c02'], $passbbdd))

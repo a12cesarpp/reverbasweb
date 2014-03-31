@@ -53,10 +53,8 @@ class Basedatos
      * @return boolean
      */
     public function existe($sql)
-    {
-        self::$_mysqli->query($sql);
-        
-        if(self::$_mysqli->error != '')
+    {   
+        if(self::$_mysqli->query($sql)->num_rows > 0)
         {
             return true;
         }
