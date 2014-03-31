@@ -1,6 +1,6 @@
 <?php
 
-require 'phpass-0.3/PasswordHash.php'; 
+require_once 'phpass-0.3/PasswordHash.php'; 
    
 /**
  * Método que encripta password con librería phpass
@@ -12,7 +12,7 @@ function encriptar($password, $vueltas = 8) {
     $hasher = new PasswordHash($vueltas, false);
  
     $password = $hasher->HashPassword($password);
-                        
+                    
     return $password;
 }
 
