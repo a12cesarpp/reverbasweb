@@ -95,16 +95,10 @@
                     
                     if (count($errores) == 0)
                     {
-                        $_POST['c07'] = str_replace('/', '-', $_POST['c07']);
-                        $_POST['c07'] = date('Y-m-d', strtotime($_POST['c07']));
-     
-                        // Initialize the hasher without portable hashes (this is more secure)
-                         $hasher = new PasswordHash(8, false);
- 
-                         // Hash the password.  $hashedPassword will be a 60-character string.
-                         $_POST['c11'] = $hasher->HashPassword($_POST['c11']);
- 
+                        $_POST['c07'] = cambiaf_mysql($_POST['c07']);
                         
+                        $_POST['c11'] = encriptar($_POST['c11']);
+
                         $sql = sprintf("insert into usuarios (nickname,nombre,apellidos,edad,email,codigopostal,fechanacimiento,sexo,telefono,privilegios,password) values ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')", $_POST['c01'], $_POST['c02'], $_POST['c03'], $_POST['c04'], $_POST['c05'], $_POST['c06'], $_POST['c07'], $_POST['c08'], $_POST['c09'], $_POST['c10'], $_POST['c11']);
 
                         if ($conexion->insertar($sql)->error == '')
