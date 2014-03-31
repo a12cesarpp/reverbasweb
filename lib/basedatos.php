@@ -37,7 +37,7 @@ class Basedatos
     private function __construct()
     {
         // Creamos el objeto mysqli y lo asignamos a $_mysqli
-        self::$_mysqli = @new mysqli(BD_SERVIDOR, BD_NOMBRE, BD_PASSWORD, BD_USUARIO);
+        self::$_mysqli = @new mysqli(BD_SERVIDOR, BD_USUARIO, BD_PASSWORD, BD_NOMBRE);
         if (self::$_mysqli->connect_error)
         {
             echo "Error conectando Base Datos: " . self::$_mysqli->connect_error;
