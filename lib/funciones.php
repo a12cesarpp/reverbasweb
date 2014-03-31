@@ -10,6 +10,18 @@ function encriptar($password, $vueltas = 8) {
     return $password;
 }
 
+function comprobarPass($password,$passbbdd) {
+    if($hasher->CheckPassword($password, $passbbdd))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+ 
+}
+
 function cambiaf_mysql($fecha) {
      $fecha = str_replace('/', '-', $fecha);
      return date('Y-m-d', strtotime($fecha));

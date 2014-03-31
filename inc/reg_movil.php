@@ -2,7 +2,6 @@
 
     require_once '../lib/basedatos.php';
     require_once '../lib/funciones.php';
-    require_once('../lib/phpass-0.3/PasswordHash.php');
 
     if ($_SERVER['REQUEST_METHOD'] == "POST")
     {

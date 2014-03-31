@@ -46,6 +46,12 @@ class Basedatos
         }
     }
     
+    /**
+     * Método que comprueba si existe el usuario en la bbdd
+     * 
+     * @param type $sql
+     * @return boolean
+     */
     public function existe($sql)
     {
         self::$_mysqli->query($sql);
@@ -60,6 +66,12 @@ class Basedatos
         }
     }
     
+    /**
+     * Método que realiza inserción en la bbdd
+     * 
+     * @param type $sql
+     * @return boolean
+     */
     public function insertar($sql)
     {
         if(self::$_mysqli->query($sql)->error != '')
@@ -72,6 +84,19 @@ class Basedatos
         }
     }
 
+    public function consulta($sql)
+    {
+        $resultado = self::$_mysqli->query($sql);
+        
+        if(self::$_mysqli->query($sql)->error != '')
+        {
+            return false;
+        }
+        else
+        {
+            return $resultado;
+        }
+    }
     //----------------------------------------------------------------------------------------------------
     /**
      * Función close()
