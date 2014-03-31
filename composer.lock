@@ -1,0 +1,69 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "11a6409960ca7c16c902af813bde5a3e",
+    "packages": [
+        {
+            "name": "hautelook/phpass",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hautelook/phpass.git",
+                "reference": "94845c6e7eecdc025e8b33dd272d03db06c87f2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hautelook/phpass/zipball/94845c6e7eecdc025e8b33dd272d03db06c87f2a",
+                "reference": "94845c6e7eecdc025e8b33dd272d03db06c87f2a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Hautelook": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Public Domain"
+            ],
+            "authors": [
+                {
+                    "name": "Solar Designer",
+                    "email": "solar@openwall.com",
+                    "homepage": "http://openwall.com/phpass/"
+                }
+            ],
+            "description": "Portable PHP password hashing framework",
+            "homepage": "http://github.com/hautelook/phpass/",
+            "keywords": [
+                "blowfish",
+                "crypt",
+                "password",
+                "security"
+            ],
+            "time": "2013-05-01 13:59:26"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "hautelook/phpass": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

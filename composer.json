@@ -1,0 +1,13 @@
+{
+    "name": "vendor/reverbasweb",
+    "description": "Description of project reverbasweb.",
+    "authors": [
+        {
+            "name": "coellobranco",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "hautelook/phpass": "dev-master"
+    }
+}
